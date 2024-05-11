@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Fortnite Knowledge - Fortnite Universe</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+
+	<style>
+    main { padding: 50px; width: 30%; margin: auto; }
+    #fortniteQuiz li { 
+        margin-bottom: 25px; /* Increase bottom margin for better spacing between questions */
+        padding: 15px; /* Add padding for some internal spacing */
+        background-color: #f4f4f4;
+
+	</style>
+<link rel="icon" type="image/x-icon" href="fortnite.ico">
+</head>
+<body>
+    <header>
+        <h1>Fortnite Trivia Quiz</h1>
+		<p>Aven Gokool 20041</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                
+                <li><a href="hallOfFame.html">Hall of Fame</a></li>
+                <li><a href="events.html">Special Events</a></li>
+                <li><a href="arsenal.html">Arsenal</a></li>
+                <li><a href="collaborations.html">Collaborations</a></li>
+                <li><a href="community.html">Community Creations</a></li>
+				
+				<li><a href="trivia.html">Trivia Quiz</a></li><li><a href="citations.html">Works Cited</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="fortniteQuiz" onsubmit="return gradeQuiz();">
+            <ol>
+                
+                <li>
+                    <p>When was Fortnite Battle Royale officially released?</p>
+                    <input type="radio" id="q1a1" name="q1" value="2016"><label for="q1a1">2016</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="2017"><label for="q1a2">2017</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="2018"><label for="q1a3">2018</label>
+                </li>
+				<li>
+					<p>Does Eminem have a skin in Fortnite?</p>
+					<input type="radio" id="q2a1" name="q2" value="True"><label for="q2a1">True</label><br>
+					<input type="radio" id="q2a2" name="q2" value="False"><label for="q2a2">False</label>
+				</li>
+				<li>
+					<p>Is Super Mario in Fortnite?</p>
+					<input type="radio" id="q3a1" name="q3" value="True"><label for="q3a1">True</label><br>
+					<input type="radio" id="q3a2" name="q3" value="False"><label for="q3a2">False</label>
+				</li>
+				<li>
+					<p>Which gun is better for Long Range?</p>
+					<input type="radio" id="q4a1" name="q4" value="Pump Shotgun"><label for="q4a1">Pump Shotgun</label><br>
+					<input type="radio" id="q4a2" name="q4" value="Sniper"><label for="q4a2">Sniper</label><br>
+					<input type="radio" id="q4a3" name="q4" value="Assault Rifle"><label for="q4a3">Assault Rifle</label>
+				</li>
+				<li>
+					<p>Which gun is best at short range?</p>
+					<input type="radio" id="q5a1" name="q5" value="Heavy Assault Rifle"><label for="q5a1">Heavy Assault Rifle</label><br>
+					<input type="radio" id="q5a2" name="q5" value="SMG"><label for="q5a2">SMG</label><br>
+					<input type="radio" id="q5a3" name="q5" value="Sniper Rifle"><label for="q5a3">Sniper Rifle</label>
+				</li>
+				<li>
+					<p>Which gun is the most versatile?</p>
+					<input type="radio" id="q6a1" name="q6" value="Assault Rifle"><label for="q6a1">Assault Rifle</label><br>
+					<input type="radio" id="q6a2" name="q6" value="Sniper Rifle"><label for="q6a2">Sniper Rifle</label><br>
+					<input type="radio" id="q6a3" name="q6" value="Pump Shotgun"><label for="q6a3">Pump Shotgun</label>
+				</li>
+				<li>
+					<p>Which weapon is the most rare?</p>
+					<input type="radio" id="q7a1" name="q7" value="Pump Shotgun"><label for="q7a1">Pump Shotgun</label><br>
+					<input type="radio" id="q7a2" name="q7" value="Infinity Gauntlet"><label for="q7a2">Infinity Gauntlet</label><br>
+					<input type="radio" id="q7a3" name="q7" value="Lightsaber"><label for="q7a3">Lightsaber</label>
+				</li>
+				<li>
+					<p>Who is the most famous Fortnite player?</p>
+					<input type="radio" id="q8a1" name="q8" value="Ninja"><label for="q8a1">Ninja</label><br>
+					<input type="radio" id="q8a2" name="q8" value="Nick Eh 30"><label for="q8a2">Nick Eh 30</label><br>
+					<input type="radio" id="q8a3" name="q8" value="SypherPK"><label for="q8a3">SypherPK</label><br>
+					<input type="radio" id="q8a4" name="q8" value="Daequan"><label for="q8a4">Daequan</label>
+				</li>
+				<li>
+					<p>Who is NOT in Fortnite?</p>
+					<input type="radio" id="q9a1" name="q9" value="Travis Scott"><label for="q9a1">Travis Scott</label><br>
+					<input type="radio" id="q9a2" name="q9" value="Lady Gaga"><label for="q9a2">Lady Gaga</label><br>
+					<input type="radio" id="q9a3" name="q9" value="Eleven from Stranger Things"><label for="q9a3">Eleven from Stranger Things</label><br>
+					<input type="radio" id="q9a4" name="q9" value="Homelander from THE BOYS"><label for="q9a4">Homelander from THE BOYS</label><br>
+					<input type="radio" id="q9a5" name="q9" value="Fry from Futurama"><label for="q9a5">Fry from Futurama</label>
+				</li>
+				<li>
+					<p>When was Creative mode introduced?</p>
+					<input type="radio" id="q10a1" name="q10" value="2020"><label for="q10a1">2020</label><br>
+					<input type="radio" id="q10a2" name="q10" value="2019"><label for="q10a2">2019</label><br>
+					<input type="radio" id="q10a3" name="q10" value="2018"><label for="q10a3">2018</label><br>
+					<input type="radio" id="q10a4" name="q10" value="2021"><label for="q10a4">2021</label>
+				</li>
+
+            </ol>
+            <button type="submit">Submit Quiz</button>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+    </main>
+    <footer>
+        <p>Aven Gokool - 20041</p>
+    </footer>
+	
+	<script>
+        function gradeQuiz() {
+            var totalQuestions = 10;
+            var score = 0;
+            var correctAnswers = [
+                "2017", "True", "False", "Sniper", "SMG", "Assault Rifle", "Infinity Gauntlet", "Ninja", 
+                "Homelander from THE BOYS", "2018"
+            ]; 
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var radios = document.getElementsByName('q' + i);
+                for (var j = 0; j < radios.length; j++) {
+                    var radio = radios[j];
+                    if (radio.checked && radio.value === correctAnswers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            var resultText = "You scored " + score + " out of " + totalQuestions;
+            document.getElementById('result').innerHTML = resultText;
+
+            return false; 
+        }
+    </script>
+	<div id="navButtons">
+    <button onclick="scrollToSection('top')" class="navButton">Top</button>
+    <button onclick="scrollToSection('middle')" class="navButton">Middle</button>
+    <button onclick="scrollToSection('bottom')" class="SnavButton">Bottom</button>
+</div>
+
+</body>
+</html>
